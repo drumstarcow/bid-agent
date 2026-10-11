@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime / logs
+.uvicorn.pid
+*.log
+
+# Local secrets (keep .env.example tracked)
+.env
+
+# SQLite demo DB — auto-seeded on first run
+backend/data/*.sqlite3
+
+# OS noise
+Thumbs.db
+Desktop.ini
