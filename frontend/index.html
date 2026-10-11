@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>投标智能体中台｜东浩兰生集团</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">投</div>
+      <div class="brand-txt">
+        <div class="brand-title">投标智能体中台</div>
+        <div class="brand-sub">东浩兰生集团 · AI+投标</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <div class="nav-item active" data-view="agent"><span class="ni">✶</span>智能体</div>
+      <div class="nav-item" data-view="dashboard"><span class="ni">◧</span>驾驶舱</div>
+      <div class="nav-item" data-view="radar"><span class="ni">◈</span>标讯雷达</div>
+      <div class="nav-item" data-view="check"><span class="ni">◉</span>招标体检</div>
+      <div class="nav-item" data-view="rag"><span class="ni">◇</span>知识库问答</div>
+      <div class="nav-item" data-view="writer"><span class="ni">◆</span>标书工坊</div>
+      <div class="nav-item" data-view="assets"><span class="ni">▤</span>素材台账</div>
+      <div class="nav-item" data-view="analytics"><span class="ni">◐</span>资产看板</div>
+      <div class="nav-item" data-view="audit"><span class="ni">⊞</span>执行与审计</div>
+    </nav>
+    <div class="side-foot">
+      <div class="tag-demo">后端数据驱动 · 全程可审计</div>
+      <div class="side-note">L1 提示词 · L2 抽取 · L3 RAG · L4 Agent</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 id="pageTitle">驾驶舱</h1>
+        <p id="pageDesc">集团投标知识资产与标讯运营总览</p>
+      </div>
+      <div class="topbar-right">
+        <div class="chip" id="todayChip">2026-10-08</div>
+        <div class="chip chip-soft">外部标书AI工具 · 已接入</div>
+      </div>
+    </header>
+    <section class="view" id="view"></section>
+  </main>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+<div class="drawer-mask" id="drawerMask"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h2 id="drawerTitle">详情</h2>
+    <button class="btn-ghost" id="drawerClose">关闭 ✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+
+<script src="assets/api.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/agent.js"></script>
+</body>
+</html>
